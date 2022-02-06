@@ -1,0 +1,354 @@
+libmath-bigint-gmp-perl (1.6010-1build1) jammy; urgency=medium
+
+  * No-change rebuild for the perl update.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sun, 06 Feb 2022 13:30:50 +0100
+
+libmath-bigint-gmp-perl (1.6010-1) unstable; urgency=medium
+
+  * Import upstream version 1.6010.
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 02 Jan 2022 17:27:31 +0100
+
+libmath-bigint-gmp-perl (1.6009-1) unstable; urgency=medium
+
+  * Import upstream version 1.6009.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Oct 2021 10:05:09 +0200
+
+libmath-bigint-gmp-perl (1.6008-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ gregor herrmann ]
+  * Update 'DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow' to '=+all'.
+  * Import upstream version 1.6008.
+  * Update years of upstream and packaging copyright.
+  * Add new third-party file to debian/copyright.
+  * Use packaged libdevel-checklib-perl instead of the bundled copy.
+  * Bump versioned test/runtime dependency on libmath-bigint-perl.
+  * Declare compliance with Debian Policy 4.6.0.
+  * Set Rules-Requires-Root: no.
+  * Bump debhelper-compat to 13.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 12 Sep 2021 17:18:22 +0200
+
+libmath-bigint-gmp-perl (1.6007-1) unstable; urgency=medium
+
+  * Import upstream version 1.6007.
+  * Update debian/upstream/metadata.
+  * Update (build) dependencies.
+  * Update years of packaging copyright.
+  * Update Build-Depends for cross builds.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Nov 2019 14:31:37 +0100
+
+libmath-bigint-gmp-perl (1.6006-1) unstable; urgency=medium
+
+  * Import upstream version 1.6006
+  * Declare compliance with Debian Policy 4.2.1.
+  * Let cme fix up versioned alternative (build) dependencies.
+  * Remove trailing whitespace from debian/*.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 21 Oct 2018 21:54:36 +0200
+
+libmath-bigint-gmp-perl (1.6005-1) unstable; urgency=medium
+
+  [ Alex Muntada ]
+  * Remove inactive pkg-perl members from Uploaders.
+
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Update years of packaging copyright.
+  * Update build dependencies.
+  * Declare compliance with Debian Policy 4.1.4.
+  * Bump debhelper compatibility level to 10.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 23 Apr 2018 16:20:54 +0200
+
+libmath-bigint-gmp-perl (1.6004-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Declare compliance with Debian Policy 4.0.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 04 Aug 2017 17:21:37 -0400
+
+libmath-bigint-gmp-perl (1.6003-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update years of packaging copyright.
+  * Bump versioned (build) dependency on libmath-bigint-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 13 Jan 2017 23:10:27 +0100
+
+libmath-bigint-gmp-perl (1.6002-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 1.6002
+  * Drop copyright stanza for included Devel::CheckLib
+  * Drop fix-checklib-fail.patch patch
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 21 Dec 2016 13:52:25 +0100
+
+libmath-bigint-gmp-perl (1.6001-1) unstable; urgency=medium
+
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+  * New upstream release.
+    Closes: #846059
+  * Bump versioned (build) dependency on Math::BigInt.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 29 Nov 2016 20:15:52 +0100
+
+libmath-bigint-gmp-perl (1.51-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 1.50
+  * d/u/metadata: update Contact data
+  * Update Debian packaging copyright
+  * debian/control: depends on libmath-bigint-perl (>= 1.999718)
+  * Declare compliance with Debian policy 3.9.8
+  * debian/rules: export DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow
+
+  [ gregor herrmann ]
+  * New upstream release 1.51.
+  * Bump versioned (build) dependency on libmath-bigint-perl to 1.999719.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 29 Apr 2016 17:03:28 +0200
+
+libmath-bigint-gmp-perl (1.49-1) unstable; urgency=medium
+
+  * New upstream release.
+    Fixes "FTBFS: test failures with newer libmath-bigint-perl"
+    (Closes: #810910)
+  * Update years of packaging copyright.
+  * Bump versioned (build) dependency on libmath-bigint-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 13 Jan 2016 19:43:56 +0100
+
+libmath-bigint-gmp-perl (1.47-1) unstable; urgency=medium
+
+  * New upstream release.
+    Fixes "FTBFS on 32 bit platforms".
+    (Closes: #807492)
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 14 Dec 2015 21:49:13 +0100
+
+libmath-bigint-gmp-perl (1.46-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 04 Dec 2015 17:38:43 +0100
+
+libmath-bigint-gmp-perl (1.45-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump versioned (build) dependency on libmath-bigint-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 09 Nov 2015 18:24:37 +0100
+
+libmath-bigint-gmp-perl (1.44-1) unstable; urgency=medium
+
+  * New upstream release.
+    Requires Math::BigInt 1.999706. (Closes: #804220)
+  * Refresh fix-checklib-fail.patch (offset).
+  * Add new upstream copyright holder.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 06 Nov 2015 13:19:17 +0100
+
+libmath-bigint-gmp-perl (1.43-1) unstable; urgency=medium
+
+  * New upstream release.
+    Fixes "FTBFS: broken by libmath-bigint-perl_1.999701-1"
+    (Closes: #799969)
+  * Update versioned build dependency on Math::BigInt.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 24 Sep 2015 22:58:08 +0200
+
+libmath-bigint-gmp-perl (1.40-1) unstable; urgency=medium
+
+  * Add debian/upstream/metadata.
+  * Import upstream version 1.39.
+    Fixes "FTBFS with perl 5.22: test failures"
+    (Closes: #788328)
+  * Import upstream version 1.40.
+  * Bump versioned (build) dependency on Math::BigInt to 1.9994.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 19 Aug 2015 20:32:31 +0200
+
+libmath-bigint-gmp-perl (1.38-2) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+    (Closes: #788270)
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Mark package as autopkgtest-able.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 09 Jun 2015 23:19:49 +0200
+
+libmath-bigint-gmp-perl (1.38-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Strip trailing slash from metacpan URLs.
+  * Update years of packaging copyright.
+  * Update (build) dependency on Math::BigInt.
+  * Use debhelper 9.20120312 to get default hardening flags.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 13 May 2014 21:03:31 +0200
+
+libmath-bigint-gmp-perl (1.37-3) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Ansgar Burchardt ]
+  * Prefer perl (>= 5.15.3) over libmath-bigint-perl (>= 1.997).
+  * Bumped Standards-Version to 3.9.4 (no changes).
+
+ -- Ansgar Burchardt <ansgar@debian.org>  Fri, 30 Aug 2013 09:50:22 +0200
+
+libmath-bigint-gmp-perl (1.37-2) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Alessandro Ghedini ]
+  * Email change: Alessandro Ghedini -> ghedo@debian.org
+  * Update copyright to Copyright-Format 1.0
+  * Bump debhelper compat level to 9
+  * Bump Standards-Version to 3.9.3 (no changes needed)
+  * Add fix-checklib-fail.patch
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Wed, 08 Aug 2012 16:38:24 +0200
+
+libmath-bigint-gmp-perl (1.37-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ Alessandro Ghedini ]
+  * New upstream release
+  * (Build-)Depends on libmath-bigint-perl (>= 1.997)
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Mon, 05 Sep 2011 18:47:06 +0200
+
+libmath-bigint-gmp-perl (1.36-2) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Alessandro Ghedini ]
+  * Add alternative dependency on perl 5.14 (Closes: #636790)
+  * Add myself to Uploaders
+  * Bump Standards-Version to 3.9.2 (no changes needed)
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Sat, 06 Aug 2011 16:46:38 +0200
+
+libmath-bigint-gmp-perl (1.36-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Rewrite control description
+  * Bump to debhelper compat 8
+  * Add myself to Uploaders and Copyright
+  * No longer install README (not useful)
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 18 Mar 2011 23:17:12 +0100
+
+libmath-bigint-gmp-perl (1.32-1.1) unstable; urgency=low
+
+  * NMU.  Change dependency libgmp3-dev --> libgmp-dev.
+
+ -- Steve M. Robbins <smr@debian.org>  Thu, 17 Mar 2011 22:06:12 -0500
+
+libmath-bigint-gmp-perl (1.32-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ gregor herrmann ]
+  * New upstream release 1.26-TRIAL (closes: #395948).
+  * Convert to source format 3.0 (quilt).
+  * Switch to debhelper 7.
+  * Set Standards-Version to 3.9.1 (no changes).
+  * debian/control: remove version from perl build dependency (already
+    satisfied in lenny). Mention module name in long description.
+  * Reformat debian/copyright (DEP5), add info about new third party file.
+  * Add (build) dependency on libmath-bigint-perl >= 1.90.
+
+  * New upstream release 1.32.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 12 Nov 2010 23:18:29 +0100
+
+libmath-bigint-gmp-perl (1.24-1) unstable; urgency=low
+
+  [ Damyan Ivanov ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Changed:
+    Maintainer set to Debian Perl Group <pkg-perl-
+    maintainers@lists.alioth.debian.org> (was: Laurent Fousse
+    <laurent@komite.net>); Laurent Fousse <laurent@komite.net> moved to
+    Uploaders.
+  * Add debian/watch.
+  * debian/rules: delete /usr/share/perl5 only if it exists (closes: #463477).
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Explicilty (build) depend on perl 5.10; the new upstream release needs a
+    newer Math::BigInt than the one in perl-modules 5.8.
+  * debian/copyright: add upstream source location and actual copyright
+    statement.
+  * Set Standards-Version to 3.7.3 (no changes).
+  * Set debhelper compatibility level to 5.
+  * debian/rules: update based on dh-make-perl's templates.
+  * Add /me to Uploaders.
+  * Add libtest-pod-perl, libtest-pod-coverage-perl to Build-Depends to
+    enable additional tests.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 03 May 2008 19:57:18 +0200
+
+libmath-bigint-gmp-perl (1.18-2) unstable; urgency=low
+
+  * Updated Standards-Version to 3.6.2 (no change needed).
+  * Rebuild needed because of GMP C++ transition.
+
+ -- Laurent Fousse <laurent@komite.net>  Mon,  5 Sep 2005 10:09:53 +0200
+
+libmath-bigint-gmp-perl (1.18-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Laurent Fousse <laurent@komite.net>  Mon, 27 Jun 2005 14:33:58 +0200
+
+libmath-bigint-gmp-perl (1.14-1) unstable; urgency=low
+
+  * Initial Release (closes: #252280).
+
+ -- Laurent Fousse <laurent@komite.net>  Sat,  5 Jun 2004 19:08:45 +0200
